@@ -1,0 +1,106 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+button{
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    background: transparent;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    background: white;
+    color: black;
+}
+
+button:actived{
+    transform: translate(3px, 5px);
+}
+
+#page{
+    height: 100%;
+}
+
+#about {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#about .video_container{
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.video_container .overlay{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(180deg, #15353F 12%,#4D3A58 72%);
+    opacity: 0.65;
+}
+
+#about video{
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    min-height: 150%;
+    min-width: 150%; 
+}
+
+
+#about #info{
+    display: block;
+    width: 50%;
+    color: white;
+    position: absolute;
+    top: 0;
+    //border:2px solid red;
+    text-align: center;
+    margin-top: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#scroll {
+    float: left;
+    width: 50%;
+    background: lightgray;
+    height: 100%;
+    overflow: scroll;
+}
+
+
+#scroll .context{
+    margin: 50px;
+
+}
+
+
+
+
+
+
+
+
