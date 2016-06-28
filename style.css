@@ -2,6 +2,27 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr{
+    width: 40%;
+    border: 1px dashed lightgray;
+}
+
+h1{
+    color: #4D3A58;
+    margin: 50px;
+    margin-top: 200px;
+}
+
+h2{
+    color: lightgray;
+}
+
+h4{
+    font-size: 0.7em;
+    line-height: 1.8em;
 }
 
 button{
@@ -23,6 +44,11 @@ button:actived{
     transform: translate(3px, 5px);
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 #page{
     height: 100%;
 }
@@ -38,6 +64,7 @@ button:actived{
     position: relative;
     display: block;
     height: 100%;
+    z-index: 55;
 }
 
 .video_container .overlay{
@@ -64,9 +91,64 @@ button:actived{
     color: white;
     position: absolute;
     top: 0;
-    //border:2px solid red;
     text-align: center;
     margin-top: 15%;
+    z-index: 88;
+}
+
+
+#about:hover + #scroll{
+    background: #4D3A58 ; 
+}
+
+.arrow{
+    transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-top: -90px;
+    position: relative;
+    left: 50%;
+    margin-left: -25px;
+    font-size: 1.5em;
+    color: #4D3A58;
+}
+
+.text{
+    margin: 50px;
+    margin-top: 10px;
+}
+
+#about nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#about nav ul{
+    color: white;
+    position: relative;
+    margin-left: -50px;
+    margin-top: 100px;
+}
+
+#about nav ul li{
+    display: inline-block;    
+}
+
+#about nav ul li a{
+    padding: 5px 30px;
+    font-size: 1em;
+}
+
+#about nav ul li a:hover{
+   border: 1px solid white; 
+}
+
+#about nav ul li a:active{
+    background: white;
+
 }
 
 
@@ -74,13 +156,7 @@ button:actived{
 
 
 
-
-
-
-
-
-
-
+/*--scroll--right part--*/
 
 
 #scroll {
@@ -88,19 +164,50 @@ button:actived{
     width: 50%;
     background: lightgray;
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
+#scroll .aboutMe{
+    display: block;
+
+}
 
 #scroll .context{
     margin: 50px;
+    margin-top: 150px;
+    color: #4D3A58;
 
 }
 
 
 
 
+/*--work1-slider-in--*/
+
+.exit{
+    position: absolute;
+    right: 30px;
+    //border: 2px solid black;
+    cursor: pointer;
+    display: block;
+    font-size: 4em;
+    color: black;
+}
 
 
+#work1{
+    margin-left: 1300px;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: pink;
+}
+
+#work1 div{
+    margin: 50px;
+}
 
 
